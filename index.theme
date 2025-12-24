@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Stylish-Nord-Navy
+Comment=A MacOS Tahoe like Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Stylish-Nord-Navy
+MetacityTheme=Stylish-Nord-Navy
+IconTheme=Stylish-Nord-Navy
+CursorTheme=MACTAHOE-cursors
+ButtonLayout=close,minimize,maximize:menu
+

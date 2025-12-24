@@ -1,0 +1,69 @@
+/* =========
+   Palette
+   ========= */
+
+/* libadwaita-like surfaces */
+@define-color surface_bg_color   #3b4252;
+@define-color secondary_bg_color #3b4252;
+@define-color card_bg_color      #3b4252;
+
+/* Main content area behind the folder list/grid */
+@define-color view_bg_color      #2b313d;
+
+/* Sidebar */
+@define-color sidebar_bg_color   #2f3646;
+
+/* Optional accents (if you want consistent selection/hover later) */
+@define-color accent_bg_color    #5e81ac;
+@define-color accent_color       #5e81ac;
+@define-color borders_color      #434c5e;
+@define-color text_color         #eceff4;
+
+
+/* ===========================
+   Nautilus (Files) - Content
+   =========================== */
+
+.nautilus-window .view,
+.nautilus-window .view background,
+.nautilus-window scrolledwindow,
+.nautilus-window scrolledwindow > viewport {
+  background-color: @view_bg_color;
+}
+
+/* Cleaner list rows */
+.nautilus-window .view row {
+  background-color: transparent;
+}
+
+
+/* ===========================
+   Nautilus (Files) - Sidebar
+   =========================== */
+
+/* Sidebar background (including the area under "Files") */
+.nautilus-window .sidebar,
+.nautilus-window .navigation-sidebar,
+.nautilus-window .sidebar-pane,
+.nautilus-window .sidebar scrolledwindow,
+.nautilus-window .sidebar scrolledwindow > viewport,
+.nautilus-window .navigation-sidebar scrolledwindow > viewport {
+  background-color: @sidebar_bg_color;
+}
+
+/* The sidebar “top strip” / toolbar area (this is usually what stays slightly different) */
+.nautilus-window .sidebar-pane toolbar,
+.nautilus-window .sidebar-pane .toolbar,
+.nautilus-window .sidebar-pane headerbar,
+.nautilus-window .sidebar-pane .top-bar,
+.nautilus-window .sidebar-pane .toolbarview,
+.nautilus-window .sidebar-pane .toolbarview > .top-bar {
+  background-color: @sidebar_bg_color;
+  box-shadow: none;
+}
+
+/* Optional: sidebar separators/borders */
+.nautilus-window .sidebar-pane separator,
+.nautilus-window .sidebar-pane .separator {
+  background-color: @borders_color;
+}
