@@ -44,7 +44,7 @@ popover > contents {
 headerbar,
 .titlebar,
 window.csd headerbar {
-  background-color: @default_bg; /* your default_bg */
+  background-color: @default_bg;
   color: @text_color;
 
   border: none;
