@@ -258,7 +258,7 @@ StWidget.focused .app-well-app-running-dot {
 
 .shell-link:active {
   color: #0074d9;
-  background-color: rgba(0, 116, 217, 0.3);
+  background-color: rgba(0, 116, 217, 0.302);
 }
 
 .lowres-icon {
@@ -572,12 +572,12 @@ StWidget.focused .app-well-app-running-dot {
 
 .datemenu-today-button:hover, .datemenu-today-button:focus {
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #414858;
 }
 
 .datemenu-today-button:active {
   color: #ffffff;
-  background-color: #001f3f98;
+  background-color: #41485898;
 }
 
 .datemenu-today-button .day-label {
@@ -1135,18 +1135,18 @@ StEntry StLabel.hint-text {
   border-radius: 12px;
   border: none;
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #464f62;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .keyboard-key:focus, .keyboard-key:hover {
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #5b6780;
 }
 
 .keyboard-key:checked, .keyboard-key:active {
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #313744;
 }
 
 .keyboard-key:grayed {
@@ -1156,13 +1156,13 @@ StEntry StLabel.hint-text {
 }
 
 .keyboard-key.default-key {
-  background-color: #001f3f;
+  background-color: #1e222a;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
 }
 
 .keyboard-key.default-key:focus, .keyboard-key.default-key:hover {
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #333a48;
 }
 
 .keyboard-key.default-key:checked, .keyboard-key.default-key:active {
@@ -2055,7 +2055,7 @@ StEntry StLabel.hint-text {
 /* OSD */
 .workspace-switcher-container, .switcher-list, .resize-popup, .osd-window {
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #252932;
   border-radius: 24px;
   border: solid rgba(0, 0, 0, 0.75);
   border-width: 1px;
@@ -2542,7 +2542,7 @@ StEntry StLabel.hint-text {
 }
 
 .popup-inactive-menu-item {
-  color: #39cccc !important;
+  color: #8ca3a7 !important;
 }
 
 .popup-inactive-menu-item:insensitive {
@@ -3290,7 +3290,7 @@ StWidget.focused .app-grid-running-dot {
 
 /* Modal Dialogs */
 .modal-dialog, .candidate-popup-content {
-  background-color: rgba(0, 31, 63, 0.96);
+  background-color: rgba(37, 41, 50, 0.96);
   border-radius: 20px;
   border: solid rgba(0, 0, 0, 0.75);
   border-width: 1px;
@@ -3657,26 +3657,26 @@ StWidget.focused .app-grid-running-dot {
   border-radius: 12px;
   padding: 4px;
   margin: 3px;
-  background-color: #001f3f;
+  background-color: #3b414f;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
   color: #ffffff;
 }
 
 .popup-menu .message:hover, .popup-menu .message:focus {
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #464d5e;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
 }
 
 .popup-menu .message:active {
   color: #ffffff;
-  background-color: #001f3f;
+  background-color: #414858;
   box-shadow: none !important;
 }
 
 .popup-menu .message:insensitive {
   color: rgba(162, 171, 188, 0.35);
-  background-color: rgba(0, 31, 63, 0.5);
+  background-color: rgba(59, 65, 79, 0.5);
   box-shadow: none !important;
 }
 
@@ -3905,7 +3905,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .notification-button:focus {
-  background-color: #001f3f;
+  background-color: #252932;
   color: #ffffff;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1) !important;
 }
@@ -4437,7 +4437,7 @@ StWidget.focused .app-grid-running-dot {
   margin-bottom: 4em;
   spacing: 12px;
   color: #dadada;
-  background-color: rgba(0, 31, 63, 0.96);
+  background-color: rgba(34, 39, 48, 0.96);
   border: 1px solid rgba(0, 0, 0, 0.75);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.25);
 }
@@ -4566,7 +4566,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .screenshot-ui-window-selector {
-  background-color: rgba(0, 31, 63, 0.96);
+  background-color: rgba(34, 39, 48, 0.96);
 }
 
 .screenshot-ui-window-selector .screenshot-ui-window-selector-window-container {
@@ -4625,7 +4625,7 @@ StWidget.focused .app-grid-running-dot {
 
 .screenshot-ui-tooltip {
   color: #dadada;
-  background-color: rgba(0, 31, 63, 0.96);
+  background-color: rgba(34, 39, 48, 0.96);
   border-radius: 9999px;
   padding: 4px 8px;
   text-align: center;
@@ -4734,7 +4734,7 @@ StWidget.focused .app-grid-running-dot {
 
 .workspace-background {
   border-radius: 30px;
-  background-color: rgba(0, 31, 63, 0.96);
+  background-color: rgba(34, 39, 48, 0.96);
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -5147,7 +5147,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .cosmic-solid-bg {
-  background-color: #001f3f;
+  background-color: #222222;
 }
 
 .cosmic-dock #dock {

@@ -1,52 +1,93 @@
-@define-color window_bg_color #2e3440;
-@define-color headerbar_bg_color #3b4252;
-@define-color sidebar_bg_color #3b4252;
-@define-color accent_color #5e81ac;
-@define-color accent_bg_color #5e81ac;
-@define-color text_color #eceff4;
-@define-color borders_color #434c5e;
-@define-color default_bg #021d2cd2; /* libadwaita surfaces */
-@define-color surface_bg_color #3b4252;
-@define-color secondary_bg_color #3b4252;
-@define-color card_bg_color #3b4252; /* Nautilus sidebar specifically */
+@media (prefers-color-scheme: dark) {
+  /* Sapphire Dream (Dark) */
+  @define-color window_bg_color #001f3f;        /* deep navy */
+  @define-color headerbar_bg_color #001f3f;     /* keep bars consistent */
+  @define-color sidebar_bg_color #001f3f;
 
-.navigation-sidebar,
-.nautilus-window .view,
-.nautilus-window .sidebar-pane,
-.nautilus-window .sidebar,
-.nautilus-window .top-bar {
-  background-color: @default_bg;
-} /* Tooltip styling */
+  @define-color accent_color #0074d9;           /* sapphire blue */
+  @define-color accent_bg_color #0074d9;
 
-.tooltip {
-  color: @text_color;
-  background-color: @default_bg;
-  border: 1px solid rgba(0, 20, 32, 0.75);
-  border-radius: 8px;
-  padding: 6px 10px;
-} /* Dropdown menus */
+  @define-color text_color #7fdbff;             /* light sky for text */
+  @define-color borders_color rgba(127, 219, 255, 0.22);
 
-menu,
-popover > contents {
-  background-color: @default_bg;
-  color: @text_color;
-} /* Submenus */
+  /* main translucent background (keep your alpha idea) */
+  @define-color default_bg rgba(0, 31, 63, 0.72);
 
-.menu submenu .menu,
-.popover submenu .popover {
-  color: @text_color;
-} /* Context menus */
+  /* libadwaita surfaces */
+  @define-color surface_bg_color rgba(0, 31, 63, 0.72);
+  @define-color secondary_bg_color rgba(0, 31, 63, 0.60);
+  @define-color card_bg_color rgba(0, 31, 63, 0.64);
 
-.context-menu {
-  color: @text_color;
+  .navigation-sidebar,
+  .nautilus-window .view,
+  .nautilus-window .sidebar-pane,
+  .nautilus-window .sidebar,
+  .nautilus-window .top-bar {
+    background-color: @default_bg;
+  }
+  
+  headerbar,
+  .titlebar,
+  window.csd headerbar {
+    background-color: @default_bg;
+    color: @text_color;
+
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Dropdown menus */
+  menu,
+  popover > contents {
+    background-color: @default_bg;
+    color: @text_color;
+  }
+
 }
 
-headerbar,
-.titlebar,
-window.csd headerbar {
-  background-color: @default_bg;
-  color: @text_color;
+@media (prefers-color-scheme: light) {
+  /* Light Blue palette (Light) */
+  @define-color window_bg_color #dff2ff;
+  @define-color headerbar_bg_color #a3d5ff;
+  @define-color sidebar_bg_color #dff2ff;
 
-  border: none;
-  box-shadow: none;
+  @define-color accent_color #6879d0;           /* deeper accent for visibility */
+  @define-color accent_bg_color #69c9de;        /* softer accent background */
+
+  @define-color text_color #001f3f;             /* readable navy text */
+  @define-color borders_color rgba(0, 31, 63, 0.18);
+
+  /* IMPORTANT: in light mode avoid heavy transparency (prevents “invisible apps”) */
+  @define-color default_bg rgba(223, 242, 255, 0.96);
+
+  /* libadwaita surfaces */
+  @define-color surface_bg_color rgba(223, 242, 255, 0.92);
+  @define-color secondary_bg_color rgba(163, 213, 255, 0.70);
+  @define-color card_bg_color rgba(223, 242, 255, 0.88);
+
+  .navigation-sidebar,
+  .nautilus-window .view,
+  .nautilus-window .sidebar-pane,
+  .nautilus-window .sidebar,
+  .nautilus-window .top-bar {
+    background-color: @default_bg;
+  }
+  
+  headerbar,
+  .titlebar,
+  window.csd headerbar {
+    background-color: @default_bg;
+    color: @text_color;
+
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Dropdown menus */
+  menu,
+  popover > contents {
+    background-color: @default_bg;
+    color: @text_color;
+  }
+
 }

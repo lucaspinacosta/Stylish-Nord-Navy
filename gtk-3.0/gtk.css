@@ -1,69 +1,93 @@
-/* =========
-   Palette
-   ========= */
+@media (prefers-color-scheme: dark) {
+  /* Sapphire Dream (Dark) */
+  @define-color window_bg_color #001f3f;        /* deep navy */
+  @define-color headerbar_bg_color #001f3f;     /* keep bars consistent */
+  @define-color sidebar_bg_color #001f3f;
 
-/* libadwaita-like surfaces */
-@define-color surface_bg_color   #3b4252;
-@define-color secondary_bg_color #3b4252;
-@define-color card_bg_color      #3b4252;
+  @define-color accent_color #0074d9;           /* sapphire blue */
+  @define-color accent_bg_color #0074d9;
 
-/* Main content area behind the folder list/grid */
-@define-color view_bg_color      #2b313d;
+  @define-color text_color #7fdbff;             /* light sky for text */
+  @define-color borders_color rgba(127, 219, 255, 0.22);
 
-/* Sidebar */
-@define-color sidebar_bg_color   #2f3646;
+  /* main translucent background (keep your alpha idea) */
+  @define-color default_bg rgba(0, 31, 63, 0.72);
 
-/* Optional accents (if you want consistent selection/hover later) */
-@define-color accent_bg_color    #5e81ac;
-@define-color accent_color       #5e81ac;
-@define-color borders_color      #434c5e;
-@define-color text_color         #eceff4;
+  /* libadwaita surfaces */
+  @define-color surface_bg_color rgba(0, 31, 63, 0.72);
+  @define-color secondary_bg_color rgba(0, 31, 63, 0.60);
+  @define-color card_bg_color rgba(0, 31, 63, 0.64);
 
+  .navigation-sidebar,
+  .nautilus-window .view,
+  .nautilus-window .sidebar-pane,
+  .nautilus-window .sidebar,
+  .nautilus-window .top-bar {
+    background-color: @default_bg;
+  }
+  
+  headerbar,
+  .titlebar,
+  window.csd headerbar {
+    background-color: @default_bg;
+    color: @text_color;
 
-/* ===========================
-   Nautilus (Files) - Content
-   =========================== */
+    border: none;
+    box-shadow: none;
+  }
 
-.nautilus-window .view,
-.nautilus-window .view background,
-.nautilus-window scrolledwindow,
-.nautilus-window scrolledwindow > viewport {
-  background-color: @view_bg_color;
+  /* Dropdown menus */
+  menu,
+  popover > contents {
+    background-color: @default_bg;
+    color: @text_color;
+  }
+
 }
 
-/* Cleaner list rows */
-.nautilus-window .view row {
-  background-color: transparent;
-}
+@media (prefers-color-scheme: light) {
+  /* Light Blue palette (Light) */
+  @define-color window_bg_color #dff2ff;
+  @define-color headerbar_bg_color #a3d5ff;
+  @define-color sidebar_bg_color #dff2ff;
 
+  @define-color accent_color #6879d0;           /* deeper accent for visibility */
+  @define-color accent_bg_color #69c9de;        /* softer accent background */
 
-/* ===========================
-   Nautilus (Files) - Sidebar
-   =========================== */
+  @define-color text_color #001f3f;             /* readable navy text */
+  @define-color borders_color rgba(0, 31, 63, 0.18);
 
-/* Sidebar background (including the area under "Files") */
-.nautilus-window .sidebar,
-.nautilus-window .navigation-sidebar,
-.nautilus-window .sidebar-pane,
-.nautilus-window .sidebar scrolledwindow,
-.nautilus-window .sidebar scrolledwindow > viewport,
-.nautilus-window .navigation-sidebar scrolledwindow > viewport {
-  background-color: @sidebar_bg_color;
-}
+  /* IMPORTANT: in light mode avoid heavy transparency (prevents “invisible apps”) */
+  @define-color default_bg rgba(223, 242, 255, 0.96);
 
-/* The sidebar “top strip” / toolbar area (this is usually what stays slightly different) */
-.nautilus-window .sidebar-pane toolbar,
-.nautilus-window .sidebar-pane .toolbar,
-.nautilus-window .sidebar-pane headerbar,
-.nautilus-window .sidebar-pane .top-bar,
-.nautilus-window .sidebar-pane .toolbarview,
-.nautilus-window .sidebar-pane .toolbarview > .top-bar {
-  background-color: @sidebar_bg_color;
-  box-shadow: none;
-}
+  /* libadwaita surfaces */
+  @define-color surface_bg_color rgba(223, 242, 255, 0.92);
+  @define-color secondary_bg_color rgba(163, 213, 255, 0.70);
+  @define-color card_bg_color rgba(223, 242, 255, 0.88);
 
-/* Optional: sidebar separators/borders */
-.nautilus-window .sidebar-pane separator,
-.nautilus-window .sidebar-pane .separator {
-  background-color: @borders_color;
+  .navigation-sidebar,
+  .nautilus-window .view,
+  .nautilus-window .sidebar-pane,
+  .nautilus-window .sidebar,
+  .nautilus-window .top-bar {
+    background-color: @default_bg;
+  }
+  
+  headerbar,
+  .titlebar,
+  window.csd headerbar {
+    background-color: @default_bg;
+    color: @text_color;
+
+    border: none;
+    box-shadow: none;
+  }
+
+  /* Dropdown menus */
+  menu,
+  popover > contents {
+    background-color: @default_bg;
+    color: @text_color;
+  }
+
 }
