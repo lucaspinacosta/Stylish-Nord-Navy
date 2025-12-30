@@ -1,22 +1,22 @@
 @media (prefers-color-scheme: dark) {
   /* Sapphire Dream (Dark) */
-  @define-color window_bg_color #001f3f;        /* deep navy */
-  @define-color headerbar_bg_color #001f3f;     /* keep bars consistent */
+  @define-color window_bg_color #001f3f; /* deep navy */
+  @define-color headerbar_bg_color #001f3f; /* keep bars consistent */
   @define-color sidebar_bg_color #001f3f;
 
-  @define-color accent_color #0074d9;           /* sapphire blue */
+  @define-color accent_color #0074d9; /* sapphire blue */
   @define-color accent_bg_color #0074d9;
 
-  @define-color text_color #7fdbff;             /* light sky for text */
-  @define-color borders_color rgba(127, 219, 255, 0.22);
+  @define-color text_color #ffffff; /* light sky for text */
+  @define-color borders_color  rgba(0, 31, 63, 0.60);
 
   /* main translucent background (keep your alpha idea) */
-  @define-color default_bg rgba(0, 31, 63, 0.72);
+  @define-color default_bg #162c3e;
 
   /* libadwaita surfaces */
-  @define-color surface_bg_color rgba(0, 31, 63, 0.72);
-  @define-color secondary_bg_color rgba(0, 31, 63, 0.60);
-  @define-color card_bg_color rgba(0, 31, 63, 0.64);
+  @define-color surface_bg_color #162c3e;
+  @define-color secondary_bg_color #162c3e;
+  @define-color card_bg_color #162c3e;
 
   .navigation-sidebar,
   .nautilus-window .view,
@@ -25,7 +25,7 @@
   .nautilus-window .top-bar {
     background-color: @default_bg;
   }
-  
+
   headerbar,
   .titlebar,
   window.csd headerbar {
@@ -42,7 +42,6 @@
     background-color: @default_bg;
     color: @text_color;
   }
-
 }
 
 @media (prefers-color-scheme: light) {
@@ -51,10 +50,10 @@
   @define-color headerbar_bg_color #a3d5ff;
   @define-color sidebar_bg_color #dff2ff;
 
-  @define-color accent_color #6879d0;           /* deeper accent for visibility */
-  @define-color accent_bg_color #69c9de;        /* softer accent background */
+  @define-color accent_color #6879d0; /* deeper accent for visibility */
+  @define-color accent_bg_color #69c9de; /* softer accent background */
 
-  @define-color text_color #001f3f;             /* readable navy text */
+  @define-color text_color #001f3f; /* readable navy text */
   @define-color borders_color rgba(0, 31, 63, 0.18);
 
   /* IMPORTANT: in light mode avoid heavy transparency (prevents “invisible apps”) */
@@ -72,7 +71,7 @@
   .nautilus-window .top-bar {
     background-color: @default_bg;
   }
-  
+
   headerbar,
   .titlebar,
   window.csd headerbar {
@@ -89,5 +88,4 @@
     background-color: @default_bg;
     color: @text_color;
   }
-
 }

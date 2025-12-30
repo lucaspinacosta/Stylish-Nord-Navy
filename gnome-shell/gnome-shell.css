@@ -2911,7 +2911,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* Tiled window previews */
 .tile-preview {
-  background-color: st-transparentize(rgba(0, 116, 217, 0.95), 0.75);
+  background-color: st-transparentize(rgba(0, 116, 217, 0.75), 0.75);
   border: 1px solid rgba(0, 116, 217, 0.95);
 }
 
