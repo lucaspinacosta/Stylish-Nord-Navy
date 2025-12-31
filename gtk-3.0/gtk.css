@@ -1,22 +1,22 @@
 @media (prefers-color-scheme: dark) {
-  /* Sapphire Dream (Dark) */
-  @define-color window_bg_color #001f3f; /* deep navy */
-  @define-color headerbar_bg_color #001f3f; /* keep bars consistent */
-  @define-color sidebar_bg_color #001f3f;
+  /* Futuristic Textured Palette */
+  @define-color window_bg_color #1a1b26; 
+  @define-color headerbar_bg_color #1a1b26; 
+  @define-color sidebar_bg_color #16161e; /* Darker sidebar for texture */
 
-  @define-color accent_color #0074d9; /* sapphire blue */
-  @define-color accent_bg_color #0074d9;
+  @define-color accent_color #7aa2f7; /* High-tech blue */
+  @define-color accent_bg_color #7aa2f7;
 
-  @define-color text_color #ffffff; /* light sky for text */
-  @define-color borders_color  rgba(0, 31, 63, 0.60);
+  @define-color text_color #c0caf5; /* Soft icy white */
+  @define-color borders_color rgba(192, 202, 245, 0.15);
 
-  /* main translucent background (keep your alpha idea) */
-  @define-color default_bg #162c3e;
+  /* Textured glass effect for main window */
+  @define-color default_bg rgba(26, 27, 38, 0.88);
 
-  /* libadwaita surfaces */
-  @define-color surface_bg_color #162c3e;
-  @define-color secondary_bg_color #162c3e;
-  @define-color card_bg_color #162c3e;
+  /* Libadwaita surfaces */
+  @define-color surface_bg_color #24283b;
+  @define-color secondary_bg_color rgba(36, 40, 59, 0.7);
+  @define-color card_bg_color #24283b;
 
   .navigation-sidebar,
   .nautilus-window .view,
@@ -31,19 +31,18 @@
   window.csd headerbar {
     background-color: @default_bg;
     color: @text_color;
-
-    border: none;
+    border-bottom: 1px solid rgba(122, 162, 247, 0.2); /* Glowing edge */
     box-shadow: none;
   }
 
-  /* Dropdown menus */
+  /* Dropdown menus with glass effect */
   menu,
   popover > contents {
-    background-color: @default_bg;
+    background-color: rgba(36, 40, 59, 0.95);
     color: @text_color;
+    border: 1px solid rgba(122, 162, 247, 0.2);
   }
 }
-
 @media (prefers-color-scheme: light) {
   /* Light Blue palette (Light) */
   @define-color window_bg_color #dff2ff;
